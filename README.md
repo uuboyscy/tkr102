@@ -1,5 +1,12 @@
 # tkr102
 
+## Resources
+### Document
+https://docs.uuboyscy.dev/
+
+### Gemini Notebook
+https://notebooklm.google.com/notebook/1cea3c03-ce28-4597-ad36-61a416917bb5
+
 ### Data Pipeline Overview
 ```mermaid
 flowchart LR
