@@ -1,0 +1,25 @@
+services:
+  flask_web_server:
+    build:
+      context: .
+      dockerfile: flask.Dockerfile
+    container_name: flask_web_server
+    restart: always
+    ports:
+      - "80:5000"
+    volumes:
+      - .:/app
+
+  demo_ngrok:
+    image: ngrok/ngrok
+    container_name: demo_ngrok
+    depends_on:
+      - flask_web_server
+    restart: always
+    environment:
+      - NGROK_AUTHTOKEN=35Y8zNH1WvwMAS7qEnNVUqo9j4N_81r6V1BFpryeykaPEjHk6
+    ports:
+      - "54088:4040"
+    links:
+      - flask_web_server:http
+    command: http flask_web_server:5000
