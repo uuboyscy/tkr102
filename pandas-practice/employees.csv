@@ -1,0 +1,7 @@
+employee_id,name,department,salary,email
+E001,Alice Chen,Engineering,95000,alice.chen@company.com
+E002,Bob Smith,Marketing,72000,
+E003,Carol White,,68000,carol.white@company.com
+E004,,,55000,
+E005,Eve Johnson,Sales,,eve.johnson@company.com
+E006,,,,
