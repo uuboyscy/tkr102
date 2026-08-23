@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">UUBOYSCY Engineering Logs icon</title>
+  <desc id="desc">A U-shaped data pipeline built from code-style curly braces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="900" y2="950" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172235"/>
+      <stop offset="1" stop-color="#0d3037"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="250" y1="210" x2="790" y2="850" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55e59b"/>
+      <stop offset="0.52" stop-color="#32d1a1"/>
+      <stop offset="1" stop-color="#21afb1"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#061317" flood-opacity="0.42"/>
+    </filter>
+  </defs>
+
+  <rect x="18" y="18" width="988" height="988" rx="220" fill="url(#bg)"/>
+  <rect x="18" y="18" width="988" height="988" rx="220" fill="none" stroke="#84f5ca" stroke-opacity="0.10" stroke-width="4"/>
+
+  <!-- Two large code-style curly brackets form one U-shaped mark. -->
+  <g fill="none" stroke="url(#mark)" stroke-width="76" stroke-linecap="round" stroke-linejoin="round" filter="url(#softShadow)">
+    <path d="M326 250 H286 C246 250 224 279 224 326 V430 C224 477 204 502 164 502 C204 502 224 527 224 574 V650 C224 794 336 864 512 864"/>
+    <path d="M698 250 H738 C778 250 800 279 800 326 V430 C800 477 820 502 860 502 C820 502 800 527 800 574 V650 C800 794 688 864 512 864"/>
+  </g>
+
+  <!-- Compact data-flow symbol; intentionally secondary to the U. -->
+  <g fill="none" stroke="#d8fff0" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" opacity="0.96">
+    <path d="M512 566 V650 M512 650 L438 719 M512 650 L586 719"/>
+  </g>
+  <g fill="#d8fff0">
+    <circle cx="512" cy="550" r="38"/>
+    <circle cx="428" cy="730" r="38"/>
+    <circle cx="596" cy="730" r="38"/>
+  </g>
+
+  <!-- Small optical highlight, kept large enough to survive downscaling. -->
+  <path d="M326 250 H286" stroke="#c9ffe9" stroke-width="18" stroke-linecap="round" opacity="0.42"/>
+  <path d="M698 250 H738" stroke="#c9ffe9" stroke-width="18" stroke-linecap="round" opacity="0.30"/>
+</svg>
