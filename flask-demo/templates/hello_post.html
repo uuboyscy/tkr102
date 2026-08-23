@@ -1,0 +1,14 @@
+<html>
+    <form action="/hello_post2" method="POST">
+        <label>What is your name?</label>
+        <br>
+        <input type="textbox" name="username">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if request_method == "POST" %}
+    <div>
+        Hello {{ username }} !
+    </div>
+    {% endif %}
+</html>

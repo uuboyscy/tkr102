@@ -1,4 +1,6 @@
-from flask import Flask, request
+from flask import Flask, render_template, request
+
+from db import get_employee_df
 
 app = Flask(__name__, static_url_path="/static", static_folder="./static")
 
@@ -57,6 +59,41 @@ def hello_post():
 
     username = request.form.get("username")
     return result_html % ("Hello %s" % (username))
+
+@app.route("/hello_post2", methods=["GET", "POST"])
+def hello_post2():
+    return render_template(
+        "hello_post.html",
+        username=request.form.get("username"),
+        request_method=request.method,
+    )
+
+# GET /show_employee?name=Marry
+@app.route("/show_employee")
+def show_employee():
+    # Extract arguments from user
+    # Call function for employee dataframe
+    # Send employee data to template
+    # Return the rendered HTML
+    pass
+
+@app.route("/show_employee")
+def show_employee():
+    # Extract arguments from user
+    name = request.args.get("name", default=None, type=str)
+    
+    # Call function for employee dataframe
+    df = get_employee_df(name=name)
+    
+    # Send employee data to template
+    employee_records = df.to_dict(orient="records")
+    
+    # Return the rendered HTML, using flask render_template
+    return render_template(
+        "show_employee.html", 
+        employees=employee_records, 
+        searched_name=name
+    )
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5001)
