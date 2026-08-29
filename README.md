@@ -5,7 +5,7 @@
 https://docs.uuboyscy.dev/
 
 ### Gemini Notebook
-https://notebooklm.google.com/notebook/1cea3c03-ce28-4597-ad36-61a416917bb5
+https://notebook.google.com/notebook/a4d65f7e-bfee-4d71-94b6-a43eee18ede1
 
 ### Data Pipeline Overview
 ```mermaid
