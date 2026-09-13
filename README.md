@@ -4,8 +4,11 @@
 ### Document
 https://docs.uuboyscy.dev/
 
-### Gemini Notebook
-https://notebook.google.com/notebook/a4d65f7e-bfee-4d71-94b6-a43eee18ede1
+### Note
+- Gemini Notebook
+    https://notebook.google.com/notebook/a4d65f7e-bfee-4d71-94b6-a43eee18ede1
+- Google Docs
+    https://docs.google.com/document/d/1bNdLdrSqs3Yx3xbf_V3uFMan4xIJiJyQHYN5e82APa8/edit?usp=sharing
 
 ### Data Pipeline Overview
 ```mermaid
